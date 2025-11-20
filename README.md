@@ -23,3 +23,17 @@ Aquí encontrarás una colección de informes y dashboards creados usando Power 
 * **DAX:** Time Intelligence, Contexto de Filtro, Variables.
 * **Visualización:** Diseño centrado en el usuario, Narración de datos, Gráficos personalizados.
 * **Conexión de Datos:** SQL Server, Excel, Web Services.
+
+---
+
+## 🙋‍♂️ Contacto Profesional
+
+Si tienes alguna pregunta sobre los proyectos, deseas discutir oportunidades de colaboración o contactarme para una propuesta de trabajo, no dudes en comunicarte.
+
+| Canal | Enlace |
+| :--- | :--- |
+| **LinkedIn** | [Darwin Colmenares](https://www.linkedin.com/in/darwin-colmenares/) |
+| **Email** | colmenaresdarwin06@gmail.com |
+| **WhatsApp** | [Enviar Mensaje Directo](https://wa.me/584265152896) |
+
+---
