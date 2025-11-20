@@ -11,7 +11,7 @@ Este proyecto es un **análisis fundamental del rendimiento de ventas** de una t
 El informe está diseñado para ser conciso y visual, enfocándose en la tendencia temporal de los ingresos y la distribución de las órdenes por categoría.
 
 > **Dashboard Principal**
-> ![Captura del Dashboard Principal](imagenes/dashboard.jpg)
+> ![Captura del Dashboard Principal](imagenes/dashboard.png)
 
 ---
 
