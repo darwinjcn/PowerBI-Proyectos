@@ -11,7 +11,7 @@ Este proyecto se enfoca en la **visualización avanzada y el diseño de la inter
 El diseño prioriza la jerarquía visual con KPIs claros, gráficos de tendencias y el uso de un mapa para mostrar la contribución de los ingresos por país.
 
 > **Dashboard Principal de Ingresos 2020**
-> ![Captura del Dashboard de Ingresos](imagenes/dashboard_ingresos.jpg)
+> ![Captura del Dashboard de Ingresos](imagenes/dashboard_ingresos.png)
 
 ---
 
@@ -24,7 +24,7 @@ Este proyecto se centra en la limpieza de datos y la creación de medidas básic
 A diferencia del proyecto anterior, este informe se construyó a partir de una **única tabla plana (`Ingresos`)** que contiene tanto los datos de hechos como los atributos dimensionales (Cliente, Género, País, etc.).
 
 > **Vista de Datos (Tabla Plana)**
-> ![Vista previa de la tabla de datos Ingresos](imagenes/vista_datos.jpg)
+> ![Vista previa de la tabla de datos Ingresos](imagenes/vista_datos.png)
 
 ### Fórmulas DAX Clave
 
