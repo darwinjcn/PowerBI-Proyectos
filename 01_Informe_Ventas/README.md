@@ -47,4 +47,4 @@ Se crearon las siguientes medidas explícitas para calcular los KPIs principales
 
 ## 🔗 Enlaces
 
-* [Archivo Power BI (PBIX)](./Informe Basico de Ventas.pbix)
+* [Archivo Power BI (PBIX)](./Informe Basico de Ventas Retail.pbix)
