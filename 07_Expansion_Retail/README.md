@@ -136,7 +136,7 @@ RETURN
 (IngresoNorm * 0.2) -        // 20% Poder adquisitivo
 (CompetidoresNorm * 0.25)    // 25% Competencia (negativo)
 
-# Métricas Clave Desarrolladas
+### Métricas Clave Desarrolladas
 // 1. Demográficas
 Poblacion 10min = SUM(Socioeco_Zonas[Poblacion_10min])
 Ingreso Promedio Zona = AVERAGE(Socioeco_Zonas[Ingreso_Prom_Q])
