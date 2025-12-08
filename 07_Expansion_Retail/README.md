@@ -65,3 +65,19 @@ Normalización de Métricas para comparación justa
 Storytelling en 3 páginas con flujo lógico
 Formato Condicional para insights rápidos
 Filtros Inteligentes (excluir zonas con tiendas)
+
+## 🔍 Insights Generados
+Top 3 Zonas Recomendadas:
+SAN-2 (San Salvador) - Mayor población, competencia moderada
+SAN-4 (San Salvador) - Baja competencia, ingresos estables
+SAN-1 (San Salvador) - Alto ingreso, zona comercial consolidada
+Hallazgos Clave:
+Stockout crítico en Cuidado Personal (13.5%)
+Oportunidad en productos saludables (demanda insatisfecha)
+NPS promedio de 6.8/10 (base para mejora)
+
+## 🚀 Cómo Ejecutar
+Descargar dashboard-retail.pbix
+Abrir con Power BI Desktop
+Los datos de muestra están incluidos
+Interactuar con filtros y segmentaciones
