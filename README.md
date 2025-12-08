@@ -14,6 +14,7 @@ Aquí encontrarás una colección de informes y dashboards creados usando Power 
 | **02. Dashboard de Dashboarding** | Práctica enfocada en principios de diseño y visualización de datos avanzados. | [Ver Proyecto](02_Dashboarding/README.md) |
 | **03. Curso Básico de Power BI** | Proyecto final de curso mostrando habilidades de modelado básico y DAX. | [Ver Proyecto](03_Curso_Basico/README.md) |
 | **04. Reporte Jerárquico** | Uso de visuales avanzados para mostrar jerarquías complejas de datos. | [Ver Proyecto](04_Reporte_Arbol/README.md) |
+| **07. Análisis de Expansión Retail** | Dashboard estratégico para identificar zonas óptimas de apertura de nuevas tiendas. | [Ver Proyecto](07_Expansion_Retail/README.md) |
 
 ---
 
