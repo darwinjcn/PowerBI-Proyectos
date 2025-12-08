@@ -110,3 +110,40 @@ Modelo Estrella con:
 ---
 
 ## 📂 Estructura del Proyecto
+07_Expansion_Retail/ ├── dashboard-retail.pbix # Dashboard principal ├── README.md # Documentación ├── screenshots/ # Capturas del dashboard │ ├── pagina1-decision.png │ ├── pagina2-consumidor.png │ └── pagina3-competencia.png ├── data/ # Datos │ ├── sample/ # Datos de ejemplo │ └── data-dictionary.md # Diccionario de datos └── analysis/ # Análisis adicional └── insights.md # Insights estratégicos
+
+
+---
+
+## 🏗️ Modelo de Datos
+CALENDARIO (dimensión central) ↑ SOCIOECO_ZONAS (42 zonas) ↑ FOOTFALL_ZONAS (92,736) VENTAS_TIENDAS (16,560) PRECIOS_COMPETENCIA (112,896) ↑ ↑ ↑ TIENDAS (30) PRODUCTOS (32) ENCUESTA_CONSUMIDOR (4,200)
+
+
+---
+
+## 📊 Medidas DAX Principales
+
+```DAX
+Score Expansion = 
+VAR PoblacionNorm   = DIVIDE([Poblacion 10min], 100000, 0)
+VAR FootfallNorm    = DIVIDE([Footfall Promedio Diario], 1000, 0)
+VAR IngresoNorm     = DIVIDE([Ingreso Promedio Zona], 20000, 0)
+VAR CompetidoresNorm= [Competidores por Zona]
+
+RETURN
+(PoblacionNorm * 0.3) +      // 30% Población
+(FootfallNorm * 0.25) +      // 25% Tráfico peatonal
+(IngresoNorm * 0.2) -        // 20% Poder adquisitivo
+(CompetidoresNorm * 0.25)    // 25% Competencia (negativo)
+
+Métricas clave:
+Demográficas → Poblacion 10min, Ingreso Promedio Zona
+Comportamiento → Footfall Promedio Diario
+Competencia → Competidores por Zona
+Consumidor → NPS Promedio, Satisfaccion Promedio
+Ventas → Ventas Totales, Margen Promedio %, Stockout Promedio %
+
+
+---
+
+Este archivo ya está **formateado y listo** para pegar directamente en tu repositorio de GitHub.
