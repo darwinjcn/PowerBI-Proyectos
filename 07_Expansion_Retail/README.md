@@ -142,8 +142,4 @@ Comportamiento → Footfall Promedio Diario
 Competencia → Competidores por Zona
 Consumidor → NPS Promedio, Satisfaccion Promedio
 Ventas → Ventas Totales, Margen Promedio %, Stockout Promedio %
-
-
 ---
-
-Este archivo ya está **formateado y listo** para pegar directamente en tu repositorio de GitHub.
