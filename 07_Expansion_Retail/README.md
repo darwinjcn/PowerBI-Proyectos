@@ -22,21 +22,21 @@ Dashboard estratégico desarrollado como prueba técnica para proceso de selecci
 ## 📈 Características del Dashboard
 
 ### Página 1: Decisión de Expansión
-![Página 1](screenshots/pagina1-decision.png)
+![Página 1](imagenes/pagina1-decision.png)
 - Score de expansión multivariable por zona
 - Ranking interactivo con métricas clave
 - Mapa geográfico con potencial comercial
 - Filtro automático de zonas sin tiendas
 
 ### Página 2: Consumidor y Demanda
-![Página 2](screenshots/pagina2-consumidor.png)
+![Página 2](imagenes/pagina2-consumidor.png)
 - Perfil de frecuencia de compra por zona
 - Análisis de motivos de visita
 - NPS (Net Promoter Score) promedio
 - Comentarios de clientes filtrados
 
 ### Página 3: Competencia y Precios
-![Página 3](screenshots/pagina3-competencia.png)
+![Página 3](imagenes/pagina3-competencia.png)
 - Evolución de precios vs competencia
 - Márgenes por categoría de producto
 - Mapa de calor de stockouts
