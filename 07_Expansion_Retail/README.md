@@ -69,3 +69,21 @@ CALCULATE(
 Competidores por Zona = 
 AVERAGE(Socioeco_Zonas[Competidores_Dentro_2km])
 dax```
+
+
+📁 Fuentes de Datos
+Archivo	Filas	Descripción
+Socioeco_Zonas.csv	42	Perfil demográfico y socioeconómico
+Footfall_Zonas.csv	92,736	Tráfico peatonal por hora
+Ventas_Tiendas.csv	16,560	Ventas internas por categoría
+Precios_Competencia.csv	112,896	Precios de competencia
+Encuesta_Consumidor.csv	4,200	Hábitos y satisfacción
+Tiendas.csv	30	Tiendas existentes
+Productos.csv	32	Catálogo de productos
+
+🎨 Decisiones de Diseño Clave
+Score Ponderado para decisión objetiva
+Normalización de Métricas para comparación justa
+Storytelling en 3 páginas con flujo lógico
+Formato Condicional para insights rápidos
+Filtros Inteligentes (excluir zonas con tiendas)
