@@ -101,3 +101,22 @@ Hallazgos Clave:
 │   └── data-dictionary.md         # Diccionario de datos
 └── analysis/                      # Análisis adicional
     └── insights.md                # Insights estratégicos
+
+
+## 📊 Medidas DAX Principales
+```dax
+// Score de Expansión Multivariable
+Score Expansion = 
+(Población * 0.3) + (Footfall * 0.25) + 
+(Ingreso * 0.2) - (Competencia * 0.25)
+
+// Footfall Promedio Diario
+Footfall Promedio Diario = 
+CALCULATE(
+    AVERAGE(Footfall_Zonas[Footfall_Total]),
+    ALLEXCEPT(Footfall_Zonas, Footfall_Zonas[ZonaID])
+)
+
+// Competidores por Zona
+Competidores por Zona = 
+AVERAGE(Socioeco_Zonas[Competidores_Dentro_2km])
