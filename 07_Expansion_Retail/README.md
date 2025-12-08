@@ -8,7 +8,7 @@ Dashboard estratégico desarrollado como prueba técnica para proceso de selecci
 
 ## ⏱️ Información de Ejecución
 - **Duración:** 3.5 horas efectivas
-- **Fecha:** Noviembre 2024
+- **Fecha:** Noviembre 2025
 - **Entregables:** Dashboard .PBIX + PDF exportado
 - **Estado:** ✅ Completado
 
@@ -102,21 +102,60 @@ Hallazgos Clave:
 └── analysis/                      # Análisis adicional
     └── insights.md                # Insights estratégicos
 
+## 🏗️ Modelo de Datos
+ARQUITECTURA ESTRELLA:
+┌─────────────────┐
+│   CALENDARIO    │ ← Dimensión central
+└─────────────────┘
+        ↑
+┌─────────────────┐
+│  SOCIOECO_ZONAS │ ← Dimensión principal (42 zonas)
+└─────────────────┘
+        ↑
+┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
+│FOOTFALL_ZONAS   │  │VENTAS_TIENDAS   │  │PRECIOS_COMPETENC│
+│(92,736 filas)   │  │(16,560 filas)   │  │(112,896 filas)  │
+└─────────────────┘  └─────────────────┘  └─────────────────┘
+        ↑                   ↑                      ↑
+┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
+│   TIENDAS       │  │   PRODUCTOS     │  │ ENCUESTA_CONSUM │
+│  (30 tiendas)   │  │  (32 productos) │  │  (4,200 ent.)   │
+└─────────────────┘  └─────────────────┘  └─────────────────┘
+
 
 ## 📊 Medidas DAX Principales
-```dax
-// Score de Expansión Multivariable
 Score Expansion = 
-(Población * 0.3) + (Footfall * 0.25) + 
-(Ingreso * 0.2) - (Competencia * 0.25)
+VAR PoblacionNorm = DIVIDE([Poblacion 10min], 100000, 0)
+VAR FootfallNorm = DIVIDE([Footfall Promedio Diario], 1000, 0)
+VAR IngresoNorm = DIVIDE([Ingreso Promedio Zona], 20000, 0)
+VAR CompetidoresNorm = [Competidores por Zona]
 
-// Footfall Promedio Diario
+RETURN
+(PoblacionNorm * 0.3) +      // 30% Población
+(FootfallNorm * 0.25) +      // 25% Tráfico peatonal
+(IngresoNorm * 0.2) -        // 20% Poder adquisitivo
+(CompetidoresNorm * 0.25)    // 25% Competencia (negativo)
+
+# Métricas Clave Desarrolladas
+// 1. Demográficas
+Poblacion 10min = SUM(Socioeco_Zonas[Poblacion_10min])
+Ingreso Promedio Zona = AVERAGE(Socioeco_Zonas[Ingreso_Prom_Q])
+
+// 2. Comportamiento
 Footfall Promedio Diario = 
 CALCULATE(
     AVERAGE(Footfall_Zonas[Footfall_Total]),
     ALLEXCEPT(Footfall_Zonas, Footfall_Zonas[ZonaID])
 )
 
-// Competidores por Zona
-Competidores por Zona = 
-AVERAGE(Socioeco_Zonas[Competidores_Dentro_2km])
+// 3. Competencia
+Competidores por Zona = AVERAGE(Socioeco_Zonas[Competidores_Dentro_2km])
+
+// 4. Consumidor
+NPS Promedio = AVERAGE(Encuesta_Consumidor[NPS_0a10])
+Satisfaccion Promedio = AVERAGE(Encuesta_Consumidor[Satisfaccion_1a5])
+
+// 5. Ventas
+Ventas Totales = SUM(Ventas_Tiendas[Ventas_Q])
+Margen Promedio % = AVERAGE(Ventas_Tiendas[Margen_%])
+Stockout Promedio % = AVERAGE(Ventas_Tiendas[Stockout_%])
