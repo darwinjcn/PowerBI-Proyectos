@@ -50,34 +50,54 @@ Modelo Estrella con:
 - Relaciones optimizadas para análisis cruzado
 
 ## 📁 Fuentes de Datos
-Archivo	Filas	Descripción
-Socioeco_Zonas.csv	42	Perfil demográfico y socioeconómico
-Footfall_Zonas.csv	92,736	Tráfico peatonal por hora
-Ventas_Tiendas.csv	16,560	Ventas internas por categoría
-Precios_Competencia.csv	112,896	Precios de competencia
-Encuesta_Consumidor.csv	4,200	Hábitos y satisfacción
-Tiendas.csv	30	Tiendas existentes
-Productos.csv	32	Catálogo de productos
+- Archivo	Filas	Descripción
+- Socioeco_Zonas.csv	42	Perfil demográfico y socioeconómico
+- Footfall_Zonas.csv	92,736	Tráfico peatonal por hora
+- Ventas_Tiendas.csv	16,560	Ventas internas por categoría
+- Precios_Competencia.csv	112,896	Precios de competencia
+- Encuesta_Consumidor.csv	4,200	Hábitos y satisfacción
+- Tiendas.csv	30	Tiendas existentes
+- Productos.csv	32	Catálogo de productos
 
 ## 🎨 Decisiones de Diseño Clave
-Score Ponderado para decisión objetiva
-Normalización de Métricas para comparación justa
-Storytelling en 3 páginas con flujo lógico
-Formato Condicional para insights rápidos
-Filtros Inteligentes (excluir zonas con tiendas)
+- Score Ponderado para decisión objetiva
+- Normalización de Métricas para comparación justa
+- Storytelling en 3 páginas con flujo lógico
+- Formato Condicional para insights rápidos
+- Filtros Inteligentes (excluir zonas con tiendas)
 
 ## 🔍 Insights Generados
 Top 3 Zonas Recomendadas:
-SAN-2 (San Salvador) - Mayor población, competencia moderada
-SAN-4 (San Salvador) - Baja competencia, ingresos estables
-SAN-1 (San Salvador) - Alto ingreso, zona comercial consolidada
+- SAN-2 (San Salvador) - Mayor población, competencia moderada
+- SAN-4 (San Salvador) - Baja competencia, ingresos estables
+- SAN-1 (San Salvador) - Alto ingreso, zona comercial consolidada
 Hallazgos Clave:
-Stockout crítico en Cuidado Personal (13.5%)
-Oportunidad en productos saludables (demanda insatisfecha)
-NPS promedio de 6.8/10 (base para mejora)
+- Stockout crítico en Cuidado Personal (13.5%)
+- Oportunidad en productos saludables (demanda insatisfecha)
+- NPS promedio de 6.8/10 (base para mejora)
 
 ## 🚀 Cómo Ejecutar
-Descargar dashboard-retail.pbix
-Abrir con Power BI Desktop
-Los datos de muestra están incluidos
-Interactuar con filtros y segmentaciones
+- Descargar dashboard-retail.pbix
+- Abrir con Power BI Desktop
+- Los datos de muestra están incluidos
+- Interactuar con filtros y segmentaciones
+
+## 📚 Aprendizajes del Proyecto
+- Integración de múltiples fuentes en tiempo limitado
+- Creación de scores estratégicos multivariable
+- Storytelling con datos para decisiones ejecutivas
+- Optimización de modelos para análisis retail
+
+## 📂 Estructura del Proyecto
+07_Expansion_Retail/
+├── dashboard-retail.pbix          # Archivo principal Power BI
+├── README.md                      # Esta documentación
+├── screenshots/                   # Imágenes del dashboard
+│   ├── pagina1-decision.png
+│   ├── pagina2-consumidor.png
+│   └── pagina3-competencia.png
+├── data/                          # Información de datos
+│   ├── sample/                    # Datos de ejemplo
+│   └── data-dictionary.md         # Diccionario de datos
+└── analysis/                      # Análisis adicional
+    └── insights.md                # Insights estratégicos
