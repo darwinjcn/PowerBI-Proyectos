@@ -52,7 +52,6 @@ Modelo Estrella con:
 
 
 ## 📊 Medidas DAX Principales
-```dax
 // Score de Expansión Multivariable
 Score Expansion = 
 (Población * 0.3) + (Footfall * 0.25) + 
@@ -68,7 +67,6 @@ CALCULATE(
 // Competidores por Zona
 Competidores por Zona = 
 AVERAGE(Socioeco_Zonas[Competidores_Dentro_2km])
-dax```
 
 
 📁 Fuentes de Datos
