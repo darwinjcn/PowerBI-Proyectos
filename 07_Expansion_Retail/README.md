@@ -50,8 +50,8 @@ Modelo Estrella con:
 - Relaciones optimizadas para análisis cruzado
 
 
-
 ## 📊 Medidas DAX Principales
+```dax
 // Score de Expansión Multivariable
 Score Expansion = 
 (Población * 0.3) + (Footfall * 0.25) + 
@@ -69,7 +69,7 @@ Competidores por Zona =
 AVERAGE(Socioeco_Zonas[Competidores_Dentro_2km])
 
 
-📁 Fuentes de Datos
+## 📁 Fuentes de Datos
 Archivo	Filas	Descripción
 Socioeco_Zonas.csv	42	Perfil demográfico y socioeconómico
 Footfall_Zonas.csv	92,736	Tráfico peatonal por hora
@@ -79,7 +79,7 @@ Encuesta_Consumidor.csv	4,200	Hábitos y satisfacción
 Tiendas.csv	30	Tiendas existentes
 Productos.csv	32	Catálogo de productos
 
-🎨 Decisiones de Diseño Clave
+## 🎨 Decisiones de Diseño Clave
 Score Ponderado para decisión objetiva
 Normalización de Métricas para comparación justa
 Storytelling en 3 páginas con flujo lógico
