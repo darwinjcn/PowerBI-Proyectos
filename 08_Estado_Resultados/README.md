@@ -12,7 +12,7 @@ Este dashboard financiero tiene como objetivo visualizar y analizar el **Estado 
 El diseño está optimizado para mostrar KPIs principales en la parte superior y un análisis detallado de la evolución de costos y ventas en el cuerpo principal.
 
 > **Vista General del Estado de Resultados**
-> ![Dashboard de Estado de Resultados](imagenes/dashboard_estado_resultados.png)
+> ![Dashboard de Estado de Resultados](imagenes/dashboard_principal.png)
 
 ---
 
