@@ -49,7 +49,7 @@ Se crearon medidas avanzadas con lógica `VAR/RETURN` y filtros específicos por
 
 ## 👤 Créditos y Referencias
 * **Autor Original**: Visual Data.
-* **Video Tutorial**: [Crea un Genial Dashboard de Estado de Resultados](https://www.youtube.com).
+* **Video Tutorial**: [Crea un Genial Dashboard de Estado de Resultados](https://www.youtube.com/watch?v=14BhMkcZPR4).
 
 ---
 
